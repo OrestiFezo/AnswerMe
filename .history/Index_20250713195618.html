@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngarko Projektin në GitHub</title>
+    <style>
+        :root {
+            --white: #ffffff;
+            --light-gray: #f0f0f0;
+            --gray: #cccccc;
+            --dark-gray: #444444;
+            --black: #000000;
+            --accent: #888888;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-gray);
+            color: var(--dark-gray);
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: var(--black);
+            color: var(--white);
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--gray);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: var(--white);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: var(--black);
+            margin-bottom: 15px;
+        }
+
+        ul {
+            background-color: var(--light-gray);
+            padding: 15px 25px;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--gray);
+            border-radius: 5px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            color: var(--dark-gray);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        pre {
+            background-color: var(--gray);
+            color: var(--black);
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 5px;
+            border: 1px solid var(--gray);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Pyetja 1</h1>
+        <p>Si të ngarkosh një projekt në GitHub nga Visual Studio Code</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Hapat Kryesorë</h2>
+            <ul>
+                <li>1. Krijo një repository të ri në GitHub (publik)</li>
+                <li>2. Hap projektin në Visual Studio Code</li>
+                <li>3. Inicializo Git në projektin tënd</li>
+                <li>4. Lidhu me repository-n në GitHub</li>
+                <li>5. Bëj push për të ngarkuar projektin</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>1. Krijo një repository të ri në GitHub</h2>
+            <p>Shko te <strong>https://github.com</strong>, kyçu në llogarinë tënde dhe kliko në butonin <em>"New repository"</em>. Jep emrin e projektit, përshkrimin dhe zgjidh opsionin "Public". Mos zgjedh krijimin e README nëse ke tashmë projektin në kompjuter.</p>
+            <img src="img\photo-1.png" alt="Hapi 1 - Krijimi i repository në GitHub">
+            <img src="img\photo-2.png" alt="Hapi 2 - Krijimi i repository në GitHub">
+        </section>
+
+        <section>
+            <h2>2. Hap projektin në Visual Studio Code</h2>
+            <p>Hap Visual Studio Code dhe nga menyja zgjidh <em>File > Open Folder</em> dhe zgjidh dosjen e projektit tënd që do të ngarkosh në GitHub.</p>
+            <img src="img\photo-3.png" alt="Hapi 3 - Hapja e projektit në VS Code">
+        </section>
+
+        <section>
+            <h2>3. Inicializo Git në projekt</h2>
+            <p>Hap terminalin dhe shkruaj komandat në vijim:</p>
+            <pre>
+git init
+git add .
+git commit -m "Commit i parë"
+            </pre>
+            <img src="img\photo-4.png" alt="Hapi 4 - Inicializimi i Git">
+        </section>
+
+        <section>
+            <h2>4. Lidhu me repository-n në GitHub</h2>
+            <p>Kopjo URL-në e repository-t nga GitHub dhe lidhe atë me projektin lokal me komandën:</p>
+            <pre>
+git remote add origin https://github.com/emri-yt/emri-projektit.git
+            </pre>
+            <img src="img\photo-5.png" alt="Hapi 5 - Lidhja me GitHub">
+        </section>
+
+        <section>
+            <h2>5. Ngarko projektin në GitHub</h2>
+            <p>Shkruaj komandën për të ngarkuar projektin në GitHub:</p>
+            <pre>
+git push -u origin master
+            </pre>
+            <p>Ose nëse dega e paracaktuar është <code>main</code>:</p>
+            <pre>
+git push -u origin main
+            </pre>
+            <img src="img\photo-6.png" alt="Hapi 6 - Ngarkimi në GitHub">
+        </section>
+
+        <section>
+            <h2>Udhezues nga github</h2>
+            <p>Te gjitha komandat qe duhet te shkruhen ne terminal 1 nga 1 tregohen edhe ne github pas krijimit te repozitorit</p>
+            <img src="img\photo-7.png" alt="Hapi 7 - Udhezim nga github">
+        </section>
+    </main>
+
+    <footer>
+        © 2025 Mini Projekt Udhëzues | Pyetje 1
+    </footer>
+
+</body>
+</html>
